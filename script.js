@@ -1,24 +1,98 @@
-/* ==========================================
-   NIGAR CREATION - ONLINE STORE
-   Shopping Cart, Search, Filter, WhatsApp Order
-========================================== */
+// ========================================
+// NIGAR CREATION - COMPLETE STORE SCRIPT
+// Compatible with your existing index.html
+// ========================================
 
 const WHATSAPP_NUMBER = "919153391672";
-const STORE_NAME = "Nigar Creation";
 
 const products = [
   {
     id: 1,
-    name: "Satin Scrunchies - Pack of 3",
+    name: "Blush Satin Scrunchie",
     category: "Scrunchies",
     price: 99,
     oldPrice: 149,
-    image: "WhatsApp Image 2026-10-07 at 12.13.07 PM.jpeg",
-    description: "Soft satin scrunchies for everyday styling."
+    color: "#e8a0b4",
+    label: "BESTSELLER"
   },
   {
     id: 2,
-    name: "Premium Satin Scrunchies",
+    name: "Midnight Black Scrunchie",
+    category: "Scrunchies",
+    price: 99,
+    oldPrice: 149,
+    color: "#29262c",
+    label: "EVERYDAY"
+  },
+  {
+    id: 3,
+    name: "Lavender Dream Scrunchie",
+    category: "Scrunchies",
+    price: 119,
+    oldPrice: 169,
+    color: "#b5a0d7",
+    label: "NEW"
+  },
+  {
+    id: 4,
+    name: "Sage Green Scrunchie",
+    category: "Scrunchies",
+    price: 109,
+    oldPrice: 159,
+    color: "#a3b9a2",
+    label: ""
+  },
+  {
+    id: 5,
+    name: "Rose Garden Bow",
+    category: "Bows",
+    price: 129,
+    oldPrice: 179,
+    color: "#d9809b",
+    label: "TRENDING",
+    bow: true
+  },
+  {
+    id: 6,
+    name: "Classic Black Bow",
+    category: "Bows",
+    price: 129,
+    oldPrice: 179,
+    color: "#29262c",
+    label: "",
+    bow: true
+  },
+  {
+    id: 7,
+    name: "Pastel Party Set of 3",
+    category: "Gift Sets",
+    price: 249,
+    oldPrice: 349,
+    color: "#efc2cf",
+    label: "SAVE MORE",
+    set: true
+  },
+  {
+    id: 8,
+    name: "Soft Neutrals Gift Set",
+    category: "Gift Sets",
+    price: 299,
+    oldPrice: 399,
+    color: "#c8b4a2",
+    label: "GIFT PICK",
+    set: true
+  }
+];
+
+let cart = [];
+let activeCategory = "All";
+
+const $ = id => document.getElementById(id);
+
+const grid = $("productGrid");
+
+const rupees = amount =>
+  "₹" + Number(amount).toLocaleString("en
     category: "Scrunchies",
     price: 149,
     oldPrice: 199,
