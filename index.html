@@ -1,137 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f5a9bd" />
-  <meta name="description" content="Shop beautiful scrunchies, hair accessories and gift sets at Nigar Creation." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7dce5">
+  <meta name="description" content="Shop beautiful satin scrunchies, hair bows and gift sets at Nigar Creation.">
   <title>Nigar Creation | Beautiful Hair, Beautiful You</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="announcement">A LITTLE SOMETHING BEAUTIFUL ✨ &nbsp; Free shipping on orders above ₹499</div>
+  <div class="announcement">A LITTLE SOMETHING BEAUTIFUL ✨ <span>Free shipping on orders above ₹499</span></div>
   <header class="site-header">
-    <button class="icon-button menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
-    <a class="brand" href="#" aria-label="Nigar Creation home">
+    <button class="icon-button menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <a class="brand" href="#home" aria-label="Nigar Creation home">
       <span class="brand-mark">NC</span>
       <span class="brand-name">Nigar <b>Creation</b><small>HAIR ACCESSORIES & MORE</small></span>
     </a>
-    <nav class="main-nav" id="mainNav">
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
       <a href="#shop">Shop All</a><a href="#bestsellers">Best Sellers</a><a href="#about">Our Story</a>
     </nav>
     <div class="header-actions">
-      <button class="icon-button search-toggle" id="searchToggle" aria-label="Search">⌕</button>
-      <button class="icon-button cart-toggle" id="cartToggle" aria-label="Open cart">♧ <span id="cartCount">0</span></button>
+      <button class="icon-button" id="searchToggle" aria-label="Search products">⌕</button>
+      <button class="icon-button cart-toggle" id="cartToggle" aria-label="Open shopping bag">♧ <span id="cartCount">0</span></button>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-copy">
-      <p class="eyebrow">MADE FOR YOUR EVERYDAY MAGIC</p>
-      <h1>Little details.<br><em>Lovely moments.</em></h1>
-      <p class="hero-text">Meet your new favourite hair accessories — thoughtfully picked to make every day feel a little more special.</p>
-      <a class="button button-dark" href="#shop">SHOP THE COLLECTION <span>↗</span></a>
-      <div class="hero-note"><span>♡</span> Cute styles, happy prices</div>
-    </div>
-    <div class="hero-art">
-      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
-      <div class="hero-scrunchie scrunchie-large">✿</div>
-      <div class="hero-scrunchie scrunchie-small">✿</div>
-      <div class="hero-bow">🎀</div>
-      <div class="hero-sticker">A little<br>love for<br>your hair ♡</div>
-    </div>
-  </section>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MADE FOR YOUR EVERYDAY MAGIC</p>
+        <h1>Little details.<br><em>Lovely moments.</em></h1>
+        <p class="hero-text">Meet your new favourite hair accessories — thoughtfully picked to make every day feel a little more special.</p>
+        <a class="button button-dark" href="#shop">SHOP THE COLLECTION <span>↗️</span></a>
+        <div class="hero-note"><span>♡</span> Cute styles, happy prices</div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of pretty scrunchies">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-scrunchie scrunchie-large">✿</div><div class="hero-scrunchie scrunchie-small">✿</div>
+        <div class="hero-bow">🎀</div><div class="hero-sticker">A little<br>love for<br>your hair ♡</div>
+      </div>
+    </section>
 
-  <div class="benefits">
-    <div><span>♡</span><p><b>Pretty by design</b><small>Styles for every mood</small></p></div>
-    <div><span>✧</span><p><b>Gift-worthy finds</b><small>Little joys, beautifully packed</small></p></div>
-    <div><span>☼</span><p><b>Made for everyday</b><small>From casual to occasion</small></p></div>
-  </div>
+    <section class="benefits" aria-label="Shopping benefits">
+      <div><span>♡</span><p><b>Pretty by design</b><small>Styles for every mood</small></p></div>
+      <div><span>✧</span><p><b>Gift-worthy finds</b><small>Little joys, beautifully packed</small></p></div>
+      <div><span>☼</span><p><b>Made for everyday</b><small>From casual to occasion</small></p></div>
+    </section>
 
-  <main>
     <section class="shop-section" id="shop">
       <div class="section-heading">
         <div><p class="eyebrow">FIND YOUR FAVOURITE</p><h2>Shop the collection</h2></div>
         <p>Small accessories, big personality.</p>
       </div>
       <div class="shop-controls">
-        <div class="category-tabs" id="categoryTabs">
-          <button class="active" data-category="All">All products</button>
-          <button data-category="Scrunchies">Scrunchies</button>
-          <button data-category="Bows">Bows</button>
-          <button data-category="Gift Sets">Gift sets</button>
+        <div class="category-tabs" id="categoryTabs" aria-label="Filter products">
+          <button class="active" data-category="All">All products</button><button data-category="Scrunchies">Scrunchies</button><button data-category="Bows">Bows</button><button data-category="Gift Sets">Gift sets</button>
         </div>
-        <label class="search-box" id="searchBox"><span>⌕</span><input id="searchInput" type="search" placeholder="Search accessories..." /></label>
-        <select id="sortSelect" aria-label="Sort products">
-          <option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option>
-        </select>
+        <label class="search-box" id="searchBox"><span>⌕</span><input id="searchInput" type="search" placeholder="Search accessories..." aria-label="Search accessories"></label>
+        <select id="sortSelect" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select>
       </div>
-      <div class="product-grid" id="productGrid"></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="shipping-note">Free shipping on orders above ₹499. Order details are confirmed with you on WhatsApp.</p>
     </section>
 
     <section class="promo" id="bestsellers">
-      <div class="promo-flower">✿</div>
-      <div><p class="eyebrow">YOUR HAIR'S HAPPY PLACE</p><h2>Everyday cute.<br><em>Extraordinary you.</em></h2></div>
-      <a class="button button-light" href="#shop">FIND YOUR FAVOURITE ↗</a>
+      <div class="promo-flower" aria-hidden="true">✿</div>
+      <div><p class="eyebrow">YOUR HAIR'S HAPPY PLACE</p><h2>Everyday cute.<br><em>Extraordinary you.</em></h2><p class="promo-text">Find a little something that feels like you.</p></div>
+      <a class="button button-light" href="#shop">FIND YOUR FAVOURITE ↗️</a>
     </section>
 
     <section class="about-section" id="about">
       <div class="about-symbol">NC<span>♡</span></div>
-      <div><p class="eyebrow">HELLO, LOVELY</p><h2>A little joy in<br>every detail.</h2><p>At Nigar Creation, we believe the smallest details can brighten your whole day. Explore pretty accessories made for gifting, getting ready, and everything in between.</p></div>
+      <div><p class="eyebrow">HELLO, LOVELY</p><h2>A little joy in<br>every detail.</h2><p>At Nigar Creation, we believe the smallest details can brighten your whole day. Explore pretty accessories for gifting, getting ready, and everything in between.</p><a class="text-link" href="#shop">Explore the collection ↗️</a></div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-brand">Nigar <b>Creation</b><p>Beautiful hair, beautiful you.</p></div>
-    <div class="footer-links"><a href="#shop">Shop</a><a href="#about">About us</a><a href="mailto:hello@nigarcreation.com">Contact</a></div>
+    <div class="footer-top">
+      <div class="footer-brand">Nigar <b>Creation</b><p>Beautiful hair, beautiful you.</p></div>
+      <div class="footer-links"><a href="#shop">Shop</a><a href="#about">About us</a><a href="mailto:info@nigarcreation.com">Email us</a><a href="https://wa.me/919153391672" target="_blank" rel="noopener">WhatsApp</a></div>
+    </div>
     <small>© <span id="year"></span> Nigar Creation. All rights reserved.</small>
+    <p class="footer-disclaimer">Orders are confirmed personally on WhatsApp. Online payments are not collected on this website.</p>
   </footer>
 
   <div class="overlay" id="overlay"></div>
-  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
-    <div class="drawer-header"><h2>Your bag <span id="drawerCount">(0)</span></h2><button class="icon-button" id="closeCart" aria-label="Close cart">×</button></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-modal="true">
+    <div class="drawer-header"><h2>Your bag <span id="drawerCount">(0)</span></h2><button class="icon-button" id="closeCart" aria-label="Close bag">×</button></div>
     <div id="cartItems" class="cart-items"><div class="empty-cart">Your bag is waiting for something lovely. ♡</div></div>
-    <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><b id="subtotal">₹0</b></div><small>Shipping and discounts are calculated at checkout.</small><button class="button button-dark checkout-button" id="checkoutButton">CONTINUE TO CHECKOUT ↗</button></div>
+    <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><b id="subtotal">₹0</b></div><small>Shipping is confirmed with you before the order is finalised.</small><button class="button button-dark checkout-button" id="checkoutButton">ORDER ON WHATSAPP ↗️</button><button class="continue-shopping" id="continueShopping">Continue shopping</button></div>
   </aside>
 
   <dialog id="checkoutDialog">
-    <form method="dialog" class="checkout-form" id="checkoutForm">
-      <button class="dialog-close" value="cancel" aria-label="Close">×</button>
-      <p class="eyebrow">ALMOST YOURS</p><h2>Checkout</h2>
-      <p class="checkout-note">This starter website is a demo. Orders and payments are not connected yet.</p>
-      <label>Full name<input required name="name" placeholder="Your name" /></label>
-      <label>Mobile number<input required name="phone" inputmode="tel" pattern="[0-9+\-\s]{10,15}" placeholder="10-digit mobile number" /></label>
-      <label>Delivery address<textarea required name="address" rows="3" placeholder="House, street, city, PIN code"></textarea></label>
-      <button class="button button-dark" type="submit">PREVIEW ORDER ↗</button>
-      <p id="checkoutMessage" class="form-message"></p>
+    <form class="checkout-form" id="checkoutForm">
+      <button class="dialog-close" type="button" id="closeCheckout" aria-label="Close">×</button>
+      <p class="eyebrow">ALMOST YOURS</p><h2>Delivery details</h2>
+      <p class="checkout-note">Your WhatsApp message will include your selected products and delivery details. Your order is not final until we confirm it with you.</p>
+      <label>Full name<input required name="name" autocomplete="name" placeholder="Your name"></label>
+      <label>Mobile number<input required name="phone" type="tel" inputmode="tel" pattern="[0-9+\-\s]{10,15}" autocomplete="tel" placeholder="10-digit mobile number"></label>
+      <label>Delivery address<textarea required name="address" rows="3" autocomplete="street-address" placeholder="House, street, city and PIN code"></textarea></label>
+      <button class="button button-dark" type="submit">SEND ORDER ON WHATSAPP ↗️</button>
+      <p id="checkoutMessage" class="form-message" role="status"></p>
     </form>
   </dialog>
-
-  <div class="toast" id="toast" role="status"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
-<section id="products" style="padding:40px 20px;text-align:center;background:#fff8fa;">
-  <h2 style="font-size:32px;">Our Scrunchies Collection</h2>
-  <p>Beautiful satin scrunchies for every occasion.</p>
-
-  <div style="max-width:320px;margin:25px auto;padding:15px;border:1px solid #eee;border-radius:12px;">
-    <img
-      src="WhatsApp%20Image%202026-10-07%20at%2012.13.07%20PM.jpeg"
-      alt="Nigar Creation Satin Scrunchies"
-      style="width:100%;border-radius:10px;"
-    >
-
-    <h3>Satin Scrunchies Set</h3>
-    <p>Soft, stylish and comfortable.</p>
-    <h3>₹99</h3>
-
-    <a
-      href="https://wa.me/919153391672"
-      style="display:inline-block;background:#198754;color:white;padding:12px 22px;border-radius:6px;text-decoration:none;"
-    >Order on WhatsApp</a>
-  </div>
-</section>
 </body>
 </html>
